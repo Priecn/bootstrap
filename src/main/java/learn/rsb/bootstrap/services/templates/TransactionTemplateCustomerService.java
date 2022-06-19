@@ -7,10 +7,10 @@ import org.springframework.transaction.support.TransactionTemplate;
 import javax.sql.DataSource;
 import java.util.Collection;
 
-class TransactionTemplateCustomerService extends BaseCustomerService {
+public class TransactionTemplateCustomerService extends BaseCustomerService {
 
     private TransactionTemplate transactionTemplate;
-    protected TransactionTemplateCustomerService(DataSource ds, TransactionTemplate tt) {
+    public TransactionTemplateCustomerService(DataSource ds, TransactionTemplate tt) {
         super(ds);
         this.transactionTemplate = tt;
     }
