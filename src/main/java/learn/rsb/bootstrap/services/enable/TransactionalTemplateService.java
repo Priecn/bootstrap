@@ -10,7 +10,7 @@ import java.util.Collection;
 
 @Service
 @Transactional
-class TransactionalTemplateService extends BaseCustomerService {
+public class TransactionalTemplateService extends BaseCustomerService {
     protected TransactionalTemplateService(DataSource ds) {
         super(ds);
     }
